@@ -15,7 +15,7 @@ A modern, accessible, and responsive multi-page web application featuring a prof
 
 ## Live Demo
 
-**Live URL:** https://your-site-name.netlify.app
+**Live URL:** multi-page-profile-card.netlify.app
 
 ## Pages
 
@@ -84,7 +84,7 @@ A modern, accessible, and responsive multi-page web application featuring a prof
 ### Option 1: Direct File Open
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/profile-card-project.git
+git clone git@github.com:Enioluwafe1/Profile-card-multiple-pages.git
 
 # Navigate to project folder
 cd profile-card-project
@@ -259,8 +259,8 @@ profile-card-project/
 ## Author
 
 [Enioluwafe Odunayo]
-- GitHub: [@your-username](https://github.com/Enioluwafe1)
-- LinkedIn: [Your Profile](https://linkedin.com/in/enioluwafe-odunayo-050321338)
+- GitHub: [@Enioluwafe1](https://github.com/Enioluwafe1)
+- LinkedIn: [Enioluwafe Odunayo](https://linkedin.com/in/enioluwafe-odunayo-050321338)
 
 ## Acknowledgments
 
