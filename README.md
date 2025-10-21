@@ -15,7 +15,8 @@ A modern, accessible, and responsive multi-page web application featuring a prof
 
 ## Live Demo
 
-**Live URL:** multi-page-profile-card.netlify.app
+**Live URL: [🌐 Live Demo](https://multi-page-profile-card.netlify.app)**
+
 
 ## Pages
 
