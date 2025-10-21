@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Profile</a></li>
+      <li><a href="about.html" class="nav-link active">About Me</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="about-card">
+      <header class="card-header">
+        <h1 class="page-title">
+          <i data-lucide="user-circle" style="width: 36px; height: 36px;"></i>
+          <span>About Me</span>
+        </h1>
+        <p class="page-subtitle">My journey, goals, and reflections on this program</p>
+      </header>
+
+      <main class="main-content" data-testid="test-about-page">
+        
+        <!-- Bio Section -->
+        <section class="about-section" data-testid="test-about-bio">
+          <div class="section-header">
+            <i data-lucide="user" class="section-icon"></i>
+            <h2 class="section-title">Who I Am</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              Hello! I'm a frontend software engineer with a passion for creating meaningful digital experiences. 
+              My journey into tech started from curiosity about how things work behind the scenes on the web, 
+              and it has grown into a genuine love for problem-solving through code.
+            </p>
+            <p>
+              I believe that great software is not just about functionality, but about creating accessible, 
+              user-friendly experiences that make people's lives easier and ultimately solves their problems. Whether it's a simple contact form 
+              or a complex application, every detail matters.
+            </p>
+            <div class="highlight-box">
+              <p>
+                "The best way to predict the future is to create it." This quote resonates with me because 
+                coding allows me to build the solutions I envision, turning ideas into reality one line at a time.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section class="about-section" data-testid="test-about-goals">
+          <div class="section-header">
+            <i data-lucide="target" class="section-icon"></i>
+            <h2 class="section-title">My Goals in This Program</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              Enrolling in this program is a significant step in my journey to becoming a professional software engineer. 
+              Here are the key objectives I'm working toward:
+            </p>
+            <ul>
+              <li>
+                <strong>Master Modern Web Development:</strong> Gain deep proficiency in HTML, CSS, JavaScript, 
+                and modern frameworks to build production-ready applications.
+              </li>
+              <li>
+                <strong>Collaboration and Networking:</strong> Engage with peers and mentors to learn from their experiences 
+                and build a supportive professional network.
+              </li>
+              <li>
+                <strong>Build a Strong Portfolio:</strong> Create real-world projects that showcase my skills 
+                and demonstrate my ability to solve practical problems.
+              </li>
+              <li>
+                <strong>Develop Problem-Solving Skills:</strong> Learn to approach challenges systematically, 
+                break down complex problems, and find efficient solutions.
+              </li>
+              <li>
+                <strong>Understand Best Practices:</strong> Write clean, maintainable code following industry 
+                standards for accessibility, security, and performance.
+              </li>
+              <li>
+                <strong>Prepare for Professional Work:</strong> Build the technical and soft skills needed to 
+                contribute effectively to development teams and collaborate on projects.
+              </li>
+              <li>
+                <strong>Never Stop Learning:</strong> Cultivate a growth mindset and stay curious about 
+                emerging technologies and development trends.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Confidence Section -->
+        <section class="about-section confidence-section" data-testid="test-about-confidence">
+          <div class="section-header">
+            <i data-lucide="alert-triangle" class="section-icon"></i>
+            <h2 class="section-title">Areas Where I'm Building Confidence</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              Growth comes from acknowledging our weaknesses and working to improve them. Here are areas 
+              where I'm actively building my skills and confidence:
+            </p>
+            <ul>
+              <li>
+                <strong>Advanced JavaScript Concepts:</strong> While I understand the basics, concepts like 
+                closures, async/await, and the event loop still challenge me. I'm working through these 
+                systematically with practice and research.
+              </li>
+              <li>
+                <strong>CSS Layout Mastery:</strong> Creating complex responsive layouts with Grid and Flexbox 
+                sometimes requires trial and error. I'm improving through building real projects and studying 
+                layout patterns.
+              </li>
+              <li>
+                <strong>Debugging Complex Issues:</strong> When bugs arise in larger codebases, I sometimes 
+                feel overwhelmed. I'm learning to use browser DevTools more effectively and break problems 
+                into smaller pieces.
+              </li>
+              <li>
+                <strong>State Management:</strong> Understanding how to properly manage application state, 
+                especially as projects grow, is an area I'm actively studying and practicing.
+              </li>
+              <li>
+                <strong>Performance Optimization:</strong> Knowing when and how to optimize code for better 
+                performance is something I'm learning through experience and mentorship.
+              </li>
+            </ul>
+            <p style="margin-top: 1rem;">
+              I view these challenges not as limitations, but as opportunities for growth. Each struggle 
+              is a chance to learn something new and become a better developer.
+            </p>
+          </div>
+        </section>
+
+        <!-- Future Note Section -->
+        <section class="about-section" data-testid="test-about-future-note">
+          <div class="section-header">
+            <i data-lucide="mail-open" class="section-icon"></i>
+            <h2 class="section-title">A Note to My Future Self</h2>
+          </div>
+          <div class="section-content">
+            <div class="note-box">
+              <p>Dear Future Me,</p>
+              <p style="margin-top: 1rem;">
+                Remember this moment, the excitement, the nervousness, the self doubt, the determination you feel right now. 
+                You're at the beginning of an incredible journey, and while the road ahead might seem daunting, 
+                trust that every challenge you face is shaping you into the developer you want to become.
+              </p>
+              <p style="margin-top: 1rem;">
+                When you look back at this code, you might smile at how simple it seems. That's growth. 
+                That's progress. But never forget the effort, the late nights, the "aha!" moments that got 
+                you there.
+              </p>
+              <p style="margin-top: 1rem;">
+                Keep learning. Keep building. Keep pushing yourself. And most importantly, remember why you 
+                started to create things that matter, to solve real problems, and to make a positive impact 
+                through technology.
+              </p>
+              <p style="margin-top: 1rem;">
+                Most importantly, build valuable connections with people along the way. Networking is just as crucial as coding skills. Do it like your life depends on it.
+              </p>
+              <p style="margin-top: 1rem;">
+                You've got this. Keep going, and don't be afraid to ask for help when you need it. The 
+                developer community is full of people who were once exactly where you are now.
+              </p>
+              <p style="margin-top: 1rem; font-weight: 600;">
+                Stay curious. Stay humble. Stay determined.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Extra Thoughts Section -->
+        <section class="about-section" data-testid="test-about-extra">
+          <div class="section-header">
+            <i data-lucide="lightbulb" class="section-icon"></i>
+            <h2 class="section-title">Additional Thoughts & Reflections</h2>
+          </div>
+          <div class="section-content">
+            <h3 style="color: #2d3748; font-size: 1.1rem; margin-bottom: 0.75rem;">What Excites Me Most</h3>
+            <p>
+              The thing that excites me most about web development is its accessibility. With just a browser 
+              and an internet connection, you can reach billions of people. The democratization of technology 
+              means that anyone, anywhere, can learn to code and build something meaningful. That's powerful.
+            </p>
+            
+            <h3 style="color: #2d3748; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">
+              My Learning Philosophy
+            </h3>
+            <p>
+              I believe in learning by doing. Reading documentation and watching tutorials are important, 
+              but nothing beats actually building projects, making mistakes, and figuring things out. 
+              Every error message is a teacher, and every bug fixed is a lesson learned.
+            </p>
+
+            <h3 style="color: #2d3748; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">
+              Beyond Code
+            </h3>
+            <p>
+              While technical skills are crucial, I'm also focusing on soft skills: communication, 
+              collaboration, time management, and empathy. Great developers aren't just great coders; 
+              they're team players who can explain complex ideas simply and work well with others.
+            </p>
+
+            <div class="highlight-box" style="margin-top: 1.5rem;">
+              <p>
+                <strong>My Commitment:</strong> I commit to showing up every day, even when it's hard. 
+                I commit to asking questions when I'm stuck, celebrating small wins, and maintaining 
+                a growth mindset. This is just the beginning, and I'm excited for what's ahead.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="profile-card.js"></script>
+</body>
+</html>

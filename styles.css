@@ -1,0 +1,606 @@
+/* ============================================
+   GLOBAL STYLES - Used across all pages
+   ============================================ */
+
+/* === Reset & Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #5f7d8f 0%, #3d5a6b 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+/* === Accessibility - Focus Styles === */
+*:focus-visible {
+  outline: 2px solid #5f7d8f;
+  outline-offset: 2px;
+}
+
+
+/* ============================================
+   NAVIGATION - Shared across all pages
+   ============================================ */
+
+   /* === Mobile Menu Toggle Button === */
+
+.main-nav {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.nav-link:hover {
+  background: #5f7d8f;
+  color: white;
+}
+
+.nav-link:focus {
+  outline: none;
+  border-color: #5f7d8f;
+  box-shadow: 0 0 0 3px rgba(95, 125, 143, 0.3);
+}
+
+.nav-link.active {
+  background: #3d5a6b;
+  color: white;
+}
+
+
+/* ============================================
+   SHARED CARD COMPONENTS
+   ============================================ */
+
+/* === Container === */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* === Card Base Styles === */
+.profile-card,
+.contact-card,
+.about-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* === Card Header === */
+.card-header {
+  background: linear-gradient(135deg, #5f7d8f 0%, #3d5a6b 100%);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.page-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* === Card Body === */
+.card-body {
+  padding: 2rem;
+}
+
+/* === Icon Styles === */
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section-title .icon,
+.section-header .icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* ============================================
+   PROFILE PAGE STYLES (index.html)
+   ============================================ */
+
+/* === Avatar === */
+.avatar-container {
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === User Info === */
+.user-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.timestamp {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  font-family: 'Courier New', monospace;
+}
+
+/* === Bio === */
+.bio {
+  color: #4a5568;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* === Social Links === */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f7fafc;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 500;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.social-link:hover {
+  background: #5f7d8f;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(95, 125, 143, 0.4);
+}
+
+.social-link:focus {
+  outline: none;
+  border-color: #5f7d8f;
+  box-shadow: 0 0 0 3px rgba(95, 125, 143, 0.3);
+}
+
+/* === Content Sections (Hobbies/Dislikes) === */
+.content-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.list-item {
+  padding: 0.5rem 1rem;
+  background: #f7fafc;
+  border-radius: 0.5rem;
+  color: #4a5568;
+  border-left: 3px solid #5f7d8f;
+}
+
+.dislikes .list-item {
+  border-left-color: #fc8181;
+}
+
+
+/* ============================================
+   CONTACT PAGE STYLES (contact.html)
+   ============================================ */
+
+/* === Form Group === */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* === Form Labels === */
+.form-label {
+  display: block;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-label .required {
+  color: #e53e3e;
+  margin-left: 0.25rem;
+}
+
+/* === Form Inputs === */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s;
+  background: #f7fafc;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #5f7d8f;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(95, 125, 143, 0.1);
+}
+
+.form-input.error,
+.form-textarea.error {
+  border-color: #e53e3e;
+  background: #fff5f5;
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* === Error Messages === */
+.error-message {
+  display: none;
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error-message.show {
+  display: flex;
+}
+
+.error-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* === Submit Button === */
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #5f7d8f 0%, #3d5a6b 100%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(95, 125, 143, 0.3);
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(95, 125, 143, 0.3);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* === Success Message === */
+.success-message {
+  display: none;
+  background: #c6f6d5;
+  border: 2px solid #48bb78;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: #22543d;
+  font-weight: 500;
+}
+
+.success-message.show {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.success-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #48bb78;
+}
+
+
+/* ============================================
+   ABOUT PAGE STYLES (about.html)
+   ============================================ */
+
+/* === Main Content Container === */
+.main-content {
+  padding: 2rem;
+}
+
+/* === About Sections === */
+.about-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.about-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* === Section Headers === */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.section-icon {
+  width: 28px;
+  height: 28px;
+  color: #5f7d8f;
+  flex-shrink: 0;
+}
+
+.about-section .section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0;
+}
+
+/* === Section Content === */
+.section-content {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.section-content p {
+  margin-bottom: 1rem;
+}
+
+.section-content p:last-child {
+  margin-bottom: 0;
+}
+
+.section-content h3 {
+  color: #2d3748;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.section-content h3:first-child {
+  margin-top: 0;
+}
+
+/* === Content Lists === */
+.section-content ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.section-content li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #f7fafc;
+  border-radius: 0.5rem;
+  border-left: 4px solid #5f7d8f;
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.section-content li::before {
+  content: "▸";
+  color: #5f7d8f;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* === Special Boxes === */
+.highlight-box {
+  background: linear-gradient(135deg, #f7fafc 0%, #e2e8f0 100%);
+  border-left: 4px solid #5f7d8f;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #2d3748;
+}
+
+.note-box {
+  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+  border: 2px solid #fc8181;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.note-box p {
+  color: #742a2a;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+/* === Confidence Section Specific === */
+.confidence-section .section-content li {
+  border-left-color: #f6ad55;
+}
+
+.confidence-section .section-content li::before {
+  color: #f6ad55;
+}
+
+
+/* ============================================
+   RESPONSIVE DESIGN - Mobile First
+   ============================================ */
+
+/* === Mobile Styles (< 640px) === */
+@media (max-width: 640px) {
+  /* Navigation */
+  .main-nav {
+    padding: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    display: block;
+    text-align: center;
+  }
+
+  /* Card Headers */
+  .card-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Card Bodies */
+  .card-body,
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  /* Profile Page */
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-name {
+    font-size: 1.5rem;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .social-link {
+    justify-content: center;
+  }
+
+  /* About Page */
+  .about-section .section-title {
+    font-size: 1.25rem;
+  }
+
+  .section-content {
+    font-size: 0.95rem;
+  }
+}
+
+/* === Tablet Styles (641px - 1024px) === */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === Desktop Styles (> 1024px) === */
+@media (min-width: 1025px) {
+  /* Additional desktop-specific styles can go here if needed */
+}

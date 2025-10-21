@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card Page</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link active">Profile</a></li>
+      <li><a href="about.html" class="nav-link">About Me</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="container">
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="card-header">
+        <figure class="avatar-container">
+          <img 
+            src="./images/IMG_TDH1.jpg" 
+            alt="Enioluwafe profile picture"
+            class="avatar"
+            data-testid="test-user-avatar"
+          >
+        </figure>
+        
+        <h1 class="user-name" data-testid="test-user-name">Enioluwafe Odunayo</h1>
+        
+        <time class="timestamp" data-testid="test-user-time" id="currentTime"></time>
+      </header>
+
+      <div class="card-body">
+        <p class="bio" data-testid="test-user-bio">
+          Early-career Frontend Engineer with a passion for creating intuitive and dynamic user experiences. Skilled in HTML, CSS, JavaScript, and React. Eager to contribute to innovative projects and grow within a collaborative team environment.
+        </p>
+
+        <!--social media links-->
+        <nav aria-label="Social media links">
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li>
+              <a 
+                href="https://www.linkedin.com/in/enioluwafe-odunayo-050321338" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-linkedin"
+              >
+                <i class="icon" data-lucide="linkedin" ></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://github.com/Enioluwafe1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-github"
+              >
+                <i class="icon" data-lucide="github" aria-label="GitHub Logo"></i>
+                <span>GitHub</span>
+              </a>
+            </li>        
+            <li>
+              <a 
+                href="https://instagram.com/enioluwafe_tdh" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-instagram"
+              >
+                <i class="icon" data-lucide="instagram" aria-label="Instagram Logo"></i>
+                <span>Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--hobbies and interest section-->
+        <section class="content-section hobbies">
+          <h2 class="section-title">
+            <span class="icon">🩶</span>
+            <span>Hobbies & Interests</span>
+          </h2>
+          <ul class="list" data-testid="test-user-hobbies">
+            <li class="list-item">Music</li>
+            <li class="list-item">Playing Drums</li>
+            <li class="list-item">Fashion</li>
+            <li class="list-item">Photography</li>
+            <li class="list-item">Cooking</li>
+          </ul>
+        </section>
+
+        <!--dislikes section-->
+        <section class="content-section dislikes">
+          <h2 class="section-title">
+            <span class="icon">🚫</span>
+            <span>Dislikes</span>
+          </h2>
+          <ul class="list" data-testid="test-user-dislikes">
+            <li class="list-item">Noise</li>
+            <li class="list-item">Traffic Jams</li>
+            <li class="list-item">Cold Food</li>
+            <li class="list-item">Lateness</li>
+            <li class="list-item">Heat</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </div>
+  <script src="profile-card.js"></script>
+</body>
+</html>

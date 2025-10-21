@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Profile</a></li>
+      <li><a href="about.html" class="nav-link">About Me</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="contact-card">
+      <header class="card-header">
+        <h1 class="page-title">
+          <i data-lucide="mail" style="width: 32px; height: 32px;"></i>
+          <span>Contact Us</span>
+        </h1>
+        <p class="page-subtitle">We'd love to hear from you. Send us a message!</p>
+      </header>
+
+      <div class="card-body">
+        <div class="success-message" data-testid="test-contact-success" role="alert" aria-live="polite">
+          <i data-lucide="check-circle" class="success-icon"></i>
+          <span>Thank you! Your message has been sent successfully. We'll get back to you soon.</span>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fullName" class="form-label">
+              Full Name<span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              class="form-input"
+              data-testid="test-contact-name"
+              aria-describedby="nameError"
+              aria-required="true"
+              autocomplete="name"
+            >
+            <div 
+              id="nameError" 
+              class="error-message" 
+              data-testid="test-contact-error-name"
+              role="alert"
+            >
+              <i data-lucide="alert-circle" class="error-icon"></i>
+              <span>Please enter your full name.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">
+              Email Address<span class="required">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              data-testid="test-contact-email"
+              aria-describedby="emailError"
+              aria-required="true"
+              autocomplete="email"
+            >
+            <div 
+              id="emailError" 
+              class="error-message" 
+              data-testid="test-contact-error-email"
+              role="alert"
+            >
+              <i data-lucide="alert-circle" class="error-icon"></i>
+              <span>Please enter a valid email address (e.g., name@example.com).</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">
+              Subject<span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="form-input"
+              data-testid="test-contact-subject"
+              aria-describedby="subjectError"
+              aria-required="true"
+            >
+            <div 
+              id="subjectError" 
+              class="error-message" 
+              data-testid="test-contact-error-subject"
+              role="alert"
+            >
+              <i data-lucide="alert-circle" class="error-icon"></i>
+              <span>Please enter a subject for your message.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">
+              Message<span class="required">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-textarea"
+              data-testid="test-contact-message"
+              aria-describedby="messageError"
+              aria-required="true"
+            ></textarea>
+            <div 
+              id="messageError" 
+              class="error-message" 
+              data-testid="test-contact-error-message"
+              role="alert"
+            >
+              <i data-lucide="alert-circle" class="error-icon"></i>
+              <span>Message must be at least 10 characters long.</span>
+            </div>
+          </div>
+
+          <button 
+            type="submit" 
+            class="submit-button" 
+            data-testid="test-contact-submit"
+            aria-label="Submit contact form"
+          >
+            <i data-lucide="send" style="width: 20px; height: 20px;"></i>
+            <span>Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="profile-card.js"></script>
+</body>
+</html>
