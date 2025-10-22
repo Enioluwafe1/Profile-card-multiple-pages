@@ -530,11 +530,12 @@ body {
 @media (max-width: 640px) {
   /* Navigation */
   .main-nav {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .nav-list {
-    flex-direction: column;
+    flex-direction:row;
+    justify-content: space-around;
     gap: 0.5rem;
   }
 

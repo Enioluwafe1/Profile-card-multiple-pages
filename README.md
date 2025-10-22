@@ -1,7 +1,7 @@
 # Profile Card Multi-Page Application
 
 A modern, accessible, and responsive multi-page web application featuring a profile card, contact form with validation, and personal reflections page. Built with semantic HTML, CSS, and vanilla JavaScript.
-(HNG Stage 1 Task)
+
 
 ## Features
 
